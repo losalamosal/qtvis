@@ -1,0 +1,11 @@
+{
+    "name": "QTVis",
+    "version": "0.0.0",
+    "description": "Quadtree Visualization",
+    "dependencies": {
+        "socket.io": "latest",
+        "express": "latest",
+        "jade": "latest"
+    },
+    "author": "Allen McPherson"
+}
