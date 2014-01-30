@@ -1,16 +1,12 @@
 // function to create a random list of rectangles
 // function to convert list of rectangles to JSON
 
-var rect2D = {
-    x:  0.0,
-    y:  0.0,
-    w:  0.0,
-    h:  0.0
+var Rect2D = function(x, y, w, h) {
+    this.x = x,
+    this.y = y,
+    this.w = w,
+    this.h = h
 };
-
-var nRectss = function(n) {
-    r = new rect2D;
-}    
 
 window.onload = function() {
 	var messages = [];
@@ -21,6 +17,9 @@ window.onload = function() {
 	var randrectsButton = document.getElementById("randrects");
 	var content = document.getElementById("content");
 	var name = document.getElementById("name");
+
+	p = new Rect2D(0.0, 0.0, 1.0, 1.0);
+	console.log("p: ", p);
 
 	socket.on('message', function (data) {
 		if(data.message) {
